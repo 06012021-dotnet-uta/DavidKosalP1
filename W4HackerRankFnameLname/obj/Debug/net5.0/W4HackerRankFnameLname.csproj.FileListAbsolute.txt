@@ -1,0 +1,16 @@
+C:\Users\david\DavidKosalP1\W4HackerRankFnameLname\bin\Debug\net5.0\W4HackerRankFnameLname.exe
+C:\Users\david\DavidKosalP1\W4HackerRankFnameLname\bin\Debug\net5.0\W4HackerRankFnameLname.deps.json
+C:\Users\david\DavidKosalP1\W4HackerRankFnameLname\bin\Debug\net5.0\W4HackerRankFnameLname.runtimeconfig.json
+C:\Users\david\DavidKosalP1\W4HackerRankFnameLname\bin\Debug\net5.0\W4HackerRankFnameLname.runtimeconfig.dev.json
+C:\Users\david\DavidKosalP1\W4HackerRankFnameLname\bin\Debug\net5.0\W4HackerRankFnameLname.dll
+C:\Users\david\DavidKosalP1\W4HackerRankFnameLname\bin\Debug\net5.0\ref\W4HackerRankFnameLname.dll
+C:\Users\david\DavidKosalP1\W4HackerRankFnameLname\bin\Debug\net5.0\W4HackerRankFnameLname.pdb
+C:\Users\david\DavidKosalP1\W4HackerRankFnameLname\obj\Debug\net5.0\W4HackerRankFnameLname.csproj.AssemblyReference.cache
+C:\Users\david\DavidKosalP1\W4HackerRankFnameLname\obj\Debug\net5.0\W4HackerRankFnameLname.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\DavidKosalP1\W4HackerRankFnameLname\obj\Debug\net5.0\W4HackerRankFnameLname.AssemblyInfoInputs.cache
+C:\Users\david\DavidKosalP1\W4HackerRankFnameLname\obj\Debug\net5.0\W4HackerRankFnameLname.AssemblyInfo.cs
+C:\Users\david\DavidKosalP1\W4HackerRankFnameLname\obj\Debug\net5.0\W4HackerRankFnameLname.csproj.CoreCompileInputs.cache
+C:\Users\david\DavidKosalP1\W4HackerRankFnameLname\obj\Debug\net5.0\W4HackerRankFnameLname.dll
+C:\Users\david\DavidKosalP1\W4HackerRankFnameLname\obj\Debug\net5.0\ref\W4HackerRankFnameLname.dll
+C:\Users\david\DavidKosalP1\W4HackerRankFnameLname\obj\Debug\net5.0\W4HackerRankFnameLname.pdb
+C:\Users\david\DavidKosalP1\W4HackerRankFnameLname\obj\Debug\net5.0\W4HackerRankFnameLname.genruntimeconfig.cache
