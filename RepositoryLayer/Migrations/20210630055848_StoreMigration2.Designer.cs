@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RepositoryLayer;
 
 namespace RepositoryLayer.Migrations
 {
     [DbContext(typeof(StoreDb))]
-    partial class StoreDbModelSnapshot : ModelSnapshot
+    [Migration("20210630055848_StoreMigration2")]
+    partial class StoreMigration2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -51,20 +53,10 @@ namespace RepositoryLayer.Migrations
                     b.Property<int>("ProductID")
                         .HasColumnType("int");
 
-                    b.Property<int?>("Location")
-                        .HasColumnType("int");
-
                     b.Property<int>("NumberProducts")
                         .HasColumnType("int");
 
-                    b.Property<int?>("Product")
-                        .HasColumnType("int");
-
                     b.HasKey("LocationID", "ProductID");
-
-                    b.HasIndex("Location");
-
-                    b.HasIndex("Product");
 
                     b.ToTable("Inventories");
                 });
@@ -92,20 +84,10 @@ namespace RepositoryLayer.Migrations
                     b.Property<int>("ProductID")
                         .HasColumnType("int");
 
-                    b.Property<int?>("Product")
-                        .HasColumnType("int");
-
                     b.Property<int>("Quantity")
                         .HasColumnType("int");
 
-                    b.Property<int?>("StoreOrder")
-                        .HasColumnType("int");
-
                     b.HasKey("OrderID", "ProductID");
-
-                    b.HasIndex("Product");
-
-                    b.HasIndex("StoreOrder");
 
                     b.ToTable("OrderDetails");
                 });
@@ -138,13 +120,7 @@ namespace RepositoryLayer.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int?>("Customer")
-                        .HasColumnType("int");
-
                     b.Property<int>("CustomerID")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("Location")
                         .HasColumnType("int");
 
                     b.Property<int>("LocationID")
@@ -155,56 +131,7 @@ namespace RepositoryLayer.Migrations
 
                     b.HasKey("OrderID");
 
-                    b.HasIndex("Customer");
-
-                    b.HasIndex("Location");
-
                     b.ToTable("Orders");
-                });
-
-            modelBuilder.Entity("ModelLibrary.Inventory", b =>
-                {
-                    b.HasOne("ModelLibrary.Location", "Locations")
-                        .WithMany()
-                        .HasForeignKey("Location");
-
-                    b.HasOne("ModelLibrary.Product", "Products")
-                        .WithMany()
-                        .HasForeignKey("Product");
-
-                    b.Navigation("Locations");
-
-                    b.Navigation("Products");
-                });
-
-            modelBuilder.Entity("ModelLibrary.OrderDetails", b =>
-                {
-                    b.HasOne("ModelLibrary.Product", "Products")
-                        .WithMany()
-                        .HasForeignKey("Product");
-
-                    b.HasOne("ModelLibrary.StoreOrder", "Orders")
-                        .WithMany()
-                        .HasForeignKey("StoreOrder");
-
-                    b.Navigation("Orders");
-
-                    b.Navigation("Products");
-                });
-
-            modelBuilder.Entity("ModelLibrary.StoreOrder", b =>
-                {
-                    b.HasOne("ModelLibrary.Customer", "Customers")
-                        .WithMany()
-                        .HasForeignKey("Customer");
-
-                    b.HasOne("ModelLibrary.Location", "Locations")
-                        .WithMany()
-                        .HasForeignKey("Location");
-
-                    b.Navigation("Customers");
-
-                    b.Navigation("Locations");
                 });
 #pragma warning restore 612, 618
         }
