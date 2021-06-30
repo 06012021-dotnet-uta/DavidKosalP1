@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace RepositoryLayer
 {
-    class StoreDb : DbContext
+    public class StoreDb : DbContext
     {
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Inventory> Inventories { get; set; }

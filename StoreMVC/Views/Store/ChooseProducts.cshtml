@@ -1,0 +1,28 @@
+﻿@model IEnumerable<ModelLibrary.Product>
+
+@{
+    ViewData["Title"] = "ChooseProducts";
+}
+
+<h1>Choose Product</h1>
+
+<form asp-controller="Store" asp-action="ChooseProducts" method="post">
+    <table>
+        <tr> <th>ProductID</th> <th>Product Name</th> <th>Product Price</th> <th>Description</th></tr>
+
+        @foreach (var prod in Model)
+        {
+            <tr>
+                <td>@prod.ProductID </td>
+                <td>@prod.ProductName</td>
+                <td>@prod.ProductPrice</td>
+                <td>@prod.ProductDescription</td>
+            </tr>
+        }
+    </table>
+    @using (Html.BeginForm("Index", "Home", FormMethod.Post))
+    {
+        <input type="text" name=" ProductName" />
+        <input type="submit" value="Submit" asp-action="ChooseProducts" />
+    }
+</form>

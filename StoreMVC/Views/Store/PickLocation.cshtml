@@ -1,0 +1,27 @@
+﻿@model IEnumerable<ModelLibrary.Location>
+
+@{
+    ViewData["Title"] = "PickLocation";
+}
+
+<h1>Pick the name of the Location you want</h1>
+
+<form asp-controller="Store" asp-action="PickLocation" method="post">
+    <table>
+        <tr> <th>Location Name</th></tr>
+
+        @foreach (var loc in Model)
+        {
+            <tr>
+                <td>@loc.LocationID </td>
+                <td>@loc.LocationName</td>
+            </tr>
+        }
+    </table>
+    @using (Html.BeginForm("Index", "Home", FormMethod.Post))
+            {
+                <input type="text" name=" LocationName"/>
+                <input type="submit" value= "Submit" asp-action="ChooseProducts"/>
+            }
+
+</form>
