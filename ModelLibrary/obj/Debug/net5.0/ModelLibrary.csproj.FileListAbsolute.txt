@@ -1,0 +1,12 @@
+C:\Users\david\DavidKosalP1\ModelLibrary\bin\Debug\net5.0\ModelLibrary.deps.json
+C:\Users\david\DavidKosalP1\ModelLibrary\bin\Debug\net5.0\ModelLibrary.dll
+C:\Users\david\DavidKosalP1\ModelLibrary\bin\Debug\net5.0\ref\ModelLibrary.dll
+C:\Users\david\DavidKosalP1\ModelLibrary\bin\Debug\net5.0\ModelLibrary.pdb
+C:\Users\david\DavidKosalP1\ModelLibrary\obj\Debug\net5.0\ModelLibrary.csproj.AssemblyReference.cache
+C:\Users\david\DavidKosalP1\ModelLibrary\obj\Debug\net5.0\ModelLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\DavidKosalP1\ModelLibrary\obj\Debug\net5.0\ModelLibrary.AssemblyInfoInputs.cache
+C:\Users\david\DavidKosalP1\ModelLibrary\obj\Debug\net5.0\ModelLibrary.AssemblyInfo.cs
+C:\Users\david\DavidKosalP1\ModelLibrary\obj\Debug\net5.0\ModelLibrary.csproj.CoreCompileInputs.cache
+C:\Users\david\DavidKosalP1\ModelLibrary\obj\Debug\net5.0\ModelLibrary.dll
+C:\Users\david\DavidKosalP1\ModelLibrary\obj\Debug\net5.0\ref\ModelLibrary.dll
+C:\Users\david\DavidKosalP1\ModelLibrary\obj\Debug\net5.0\ModelLibrary.pdb
